@@ -6,6 +6,9 @@ module.exports = {
     path: path.join(__dirname, '../dist'),
     publicPath: '/public/' // public后面一定记住加/,否则会影响热更新
   },
+  resolve: {
+    extensions: ['.js', '.jsx']
+  },
   module: {
     rules: [
       {
