@@ -7,7 +7,7 @@ import { createStoreMap } from './store/store'
 // 让mobx在服务器渲染的时候不会重复数据变换
 useStaticRendering(true)
 
-//  {appStore: xxx}
+
 export default (stores, routerContext, url) => (
   <Provider {...stores}>
     <StaticRouter context={routerContext} location={url}>
